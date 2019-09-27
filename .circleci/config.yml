@@ -18,7 +18,8 @@ jobs:
           command: |
             python3 --version
             ls
-            python3 -m venv venv
+            python3 -m venv ~/.devops
+            source ~/.devops/bin/activate
             . venv/bin/activate
             make install
             # Install hadolint

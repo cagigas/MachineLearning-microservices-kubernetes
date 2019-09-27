@@ -11,7 +11,7 @@ dockerpath=udacitycagigasimage
 # Run the Docker Hub container with kubernetes
 kubectl run $dockerpath --image=cagigas/udacitycagigasimage:v1 --port=80
 
-# Step 3:
+# Step 3: 
 # List kubernetes pods
 kubectl get pod
 # Step 4:

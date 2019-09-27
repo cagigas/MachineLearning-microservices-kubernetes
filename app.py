@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
@@ -64,8 +65,6 @@ def predict():
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
     LOG.info(f"output prediction: \n{inference_payload}")
-    LOG.info(f"prediction: \n{prediction}")
-
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
